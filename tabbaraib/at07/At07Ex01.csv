@@ -1,0 +1,14 @@
+" nombre",achat,nbRepas,console
+9,,,"Indiquez le type d'achat : "
+10,Argent,,
+16,,,Billets à prix réduit pour des amis
+17,,,Accès les fins de semaine d'automne
+36,,,Bonne visite!
+,,,
+" nombre",achat,nbRepas,console
+9,,,"Indiquez le type d'achat : "
+10,repas,,
+23,,,Combien de repas?
+24,,1,
+28,,,Souper
+36,,,Bonne visite!

@@ -1,0 +1,103 @@
+<mxfile host="65bd71144e">
+    <diagram id="4H1Hc_F6fQBt1v2s8i5x" name="Page-1">
+        <mxGraphModel dx="1980" dy="1113" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="4" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="2" target="3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="Debut" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="365" y="10" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="3" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Variables: ct, mp, mar, b100, b20, b5, b1" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="363" y="80" width="125" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="5" target="8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Afficher:&lt;br&gt;&quot;Cout total de l'achat: &quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="346" y="160" width="158.75" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="7" target="11">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Afficher:&lt;br&gt;&quot;Cout total de l'achat: &quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="346.12" y="290" width="158.75" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="8" target="7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Lire: ct" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="386" y="240" width="77.51" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="11" target="13">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Lire: mp" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="386" y="370" width="77.51" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="" style="edgeStyle=none;html=1;fontColor=#FFFFFF;" edge="1" parent="1" source="13" target="16">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="mar = ct - mp" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="365" y="420" width="115" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="edgeStyle=none;html=1;fontColor=#FFFFFF;" edge="1" parent="1" source="16" target="20">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="&lt;span id=&quot;docs-internal-guid-e5d86844-7fff-f38b-03a2-4452653fa133&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;b100 = mar DIV 100&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="336.5" y="475" width="174" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="" style="edgeStyle=none;html=1;fontColor=#FFFFFF;" edge="1" parent="1" source="20" target="26">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="&lt;span id=&quot;docs-internal-guid-caa96368-7fff-7342-4fc6-b6c4ea03a520&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;mar =&amp;nbsp; mar MOD 100&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="335.5" y="523" width="174" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="" style="edgeStyle=none;html=1;fontColor=#FFFFFF;" edge="1" parent="1" source="22" target="33">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="&lt;span id=&quot;docs-internal-guid-435c9801-7fff-5e70-4bb6-e33fd6243f73&quot;&gt;&lt;p style=&quot;line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;b1 = mar&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="362.5" y="756" width="114.5" height="27" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="" style="edgeStyle=none;html=1;fontColor=#FFFFFF;" edge="1" parent="1" source="23" target="22">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="&lt;span id=&quot;docs-internal-guid-6d6d2fee-7fff-3708-3d29-0a6a4ba6cbdf&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;mar = mar MOD&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="347.5" y="707" width="144.5" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="" style="edgeStyle=none;html=1;fontColor=#FFFFFF;" edge="1" parent="1" source="24" target="23">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="&lt;span id=&quot;docs-internal-guid-a9227a6b-7fff-0639-eec1-a4b4ba292b75&quot;&gt;&lt;p style=&quot;line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;b5 = mar DIV 5&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="347.5" y="663" width="144.5" height="29" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="" style="edgeStyle=none;html=1;fontColor=#FFFFFF;" edge="1" parent="1" source="25" target="24">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="&lt;span id=&quot;docs-internal-guid-c102b2f5-7fff-c55a-5f6b-7d5692e8663a&quot;&gt;&lt;p style=&quot;line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;mar = mar MOD 20&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="338.5" y="617" width="164.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="edgeStyle=none;html=1;fontColor=#FFFFFF;" edge="1" parent="1" source="26" target="25">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="&lt;span id=&quot;docs-internal-guid-6f63be68-7fff-d350-7b39-4f58957950a7&quot;&gt;&lt;p style=&quot;line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;b20 = mar DIV 20&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="339.5" y="569" width="164.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="" style="edgeStyle=none;html=1;fontColor=#FFFFFF;" edge="1" parent="1" source="33" target="35">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="&lt;span id=&quot;docs-internal-guid-435c9801-7fff-5e70-4bb6-e33fd6243f73&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;p style=&quot;line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span id=&quot;docs-internal-guid-223eb2c5-7fff-f847-755d-e48ce1d38f35&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.7999999999999998;margin-top:0pt;margin-bottom:0pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial, sans-serif; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;AFFICHER(&quot;Remettre au client &quot;, b100, “x100$,” b20, “x20$,”, b5, “x5$,”, b1, “x1$,”)&lt;/span&gt;&lt;/p&gt;&lt;/font&gt;&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="262.5" y="801" width="316" height="87" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="Fin&lt;br&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="362.5" y="905" width="120" height="50" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

@@ -1,0 +1,21 @@
+" ligne",secondeTotal,heure,minute,seconde,console
+12,0,,,,
+13,,,,,
+14,,,,,"Entrez un temps (m s) ou 0 0 pour terminer : "
+15,,,45,,
+16,,,,37,
+17,2737,,,,
+14,,,,,"Entrez un temps (m s) ou 0 0 pour terminer : "
+15,,,52,,
+16,,,,44,
+17,5901,,,,
+14,,,,,"Entrez un temps (m s) ou 0 0 pour terminer : "
+15,,,0,,
+16,,,,0,
+17,5901,,,,
+18,,,,,
+19,,1,,,
+20,2301,,,,
+21,,,38,,
+22,,,,21,
+23,,,,,Temps total : 1h 38m 21s

@@ -1,0 +1,14 @@
+nb1Etoile	nb2Etoile	Nb2Etoile	Nb3Etoile	Nb4Etoile	nbTotalVote	nbTotalEtoile	nbEtoileMoyen	Console
+								"
+  Indiquer le nombre de votes pour 1, 2, 3 et 4
+  étoiles :
+  "
+	16							
+		25						
+			33					
+				16				
+					90			
+						229		
+							2.54444446	
+								Note moyenne : 2.5444446
+								Nombre total de votes : 90

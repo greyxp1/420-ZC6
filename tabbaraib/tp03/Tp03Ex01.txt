@@ -1,0 +1,53 @@
+ALGORITHME DevineNombre
+Constantes
+    NB_MAX = 15, MAX_ESSAI = 3
+VARIABLES
+    nbUsager, nbADeviner, numEssai TYPE NUMERIQUE
+DEBUT
+    numEssai <-- 0
+    nbADeviner <-- 9
+    AFFICHER ("Vous devez deviner le nombre secret entre 1 et " + NB_MAX + ".")
+    AFFICHER ("Le nombre de tentatives est limité à " + MAX_ESSAI + ".")
+    FAIRE
+        numEssai <-- numEssai + 1
+        AFFICHER ("Tentative #" + numEssai + " : ")
+        LIRE (nbUsager)
+        SI (nbUsager < nbADeviner) ALORS
+            AFFICHER ("Plus grand")
+            SINON SI (nbUsager > nbADeviner) ALORS
+                AFFICHER ("Plus petit")
+        FINSI
+    TANTQUE (nbUsager != nbADeviner && numEssai < MAX_ESSAI)
+
+    SI (nbUsager == nbADeviner) ALORS
+        AFFICHER ("SUPER! Vous avez réussi!")
+        SINON ("Le nombre à découvrir était " + nbADeviner + ".")
+        FINSI
+
+
+BONUS: Le nombre minimum d'essais nécessaires pour être assuré de deviner un 
+nombre compris entre 1 et 15 inclusivement est 4.
+
+Explication:
+
+Nombre Aléatoire = 1
+
+On prend le milieu de la liste des nombres de 1 à 15.
+
+ 1   2   3   4   5   6   7  |8|  9   10  11  12  13  14  15
+
+On vérifie si 8 est le nombre aléatoire. Si 8 n'est pas le nombre aléatoire,
+on vérifie si le nombre aléatoire est plus grand ou plus petit que 8.
+
+ 1   2   3  |4|  5   6   7   8   9   10  11  12  13  14  15
+
+Si le nombre aléatoire est plus grand que 8, on prend le milieu de la liste des nombres de 9 à 15. 
+Si le nombre aléatoire est plus petit que 8, on prend le milieu de la liste des nombres de 1 à 7. 
+
+ 1  |2|  3   4   5   6   7   8   9   10  11  12  13  14  15
+
+On répète ces étapes jusqu'à ce qu'on trouve le nombre aléatoire.
+
+|1|  2   3   4   5   6   7   8   9   10  11  12  13  14  15
+
+Le nombre de répétitions ne dépassera jamais 4 lorsque la liste des nombres soit de 1 à 15.

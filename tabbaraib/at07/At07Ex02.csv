@@ -1,0 +1,9 @@
+nombre,heure1,minute1,heure2,minute2,console
+8,,,,,"Inscrivez une première heure (hh mm) : "
+9,15,,,,
+10,,45,,,
+11,,,,,"Inscrivez une deuxième heure (hh mm) : "
+12,15,,,,
+13,,46,,,
+23,,,,,La première heure précède la deuxième.
+25,,,,,Bonne journée!

@@ -1,0 +1,16 @@
+ligne,joueur1,joueur2,joueur3,joueur4,reponse,meilleure,diffJoueur,diffMeilleure,console
+9,,,,,1301,,,,
+10,,,,,,1,,,
+11,,,,,,,,1300,
+12,,,,,,,,,Quelle est la distance (km) entre Laval et Radisson?
+13,,,,,,,,,"Entrez les réponses des quatre joueurs : "
+14,1000,,,,,,,,
+15,,1500,,,,,,,
+16,,,800,,,,,,
+17,,,,1250,,,,,
+19,,,,,,,301,,
+21,,,,,,1000,,,
+22,,,,,,,,301,
+40,,,,,,1250,,,
+41,,,,,,,,51,
+43,,,,,,,,,Meilleure réponse : 1250

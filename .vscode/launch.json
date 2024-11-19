@@ -1,0 +1,343 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "At12Ex06",
+            "request": "launch",
+            "mainClass": "tabbaraib.at12.At12Ex06",
+            "projectName": "420-ZC6_c1c74069"
+        },
+        {
+            "type": "java",
+            "name": "At12Ex05",
+            "request": "launch",
+            "mainClass": "tabbaraib.at12.At12Ex05",
+            "projectName": "420-ZC6_c1c74069"
+        },
+        {
+            "type": "java",
+            "name": "At12Ex04",
+            "request": "launch",
+            "mainClass": "tabbaraib.at12.At12Ex04",
+            "projectName": "420-ZC6_c1c74069"
+        },
+        {
+            "type": "java",
+            "name": "At12Ex03",
+            "request": "launch",
+            "mainClass": "tabbaraib.at12.At12Ex03",
+            "projectName": "420-ZC6_c1c74069"
+        },
+        {
+            "type": "java",
+            "name": "At12Ex02",
+            "request": "launch",
+            "mainClass": "tabbaraib.at12.At12Ex02",
+            "projectName": "420-ZC6_c1c74069"
+        },
+        {
+            "type": "java",
+            "name": "At12Ex01",
+            "request": "launch",
+            "mainClass": "tabbaraib.at12.At12Ex01",
+            "projectName": "420-ZC6_c1c74069"
+        },
+        {
+            "type": "java",
+            "name": "Tp03Ex03",
+            "request": "launch",
+            "mainClass": "tabbaraib.tp03.Tp03Ex03",
+            "projectName": "420-ZC6_5605b008"
+        },
+        {
+            "type": "java",
+            "name": "Tp03Ex03",
+            "request": "launch",
+            "mainClass": "tabbaraib.tp03.Tp03Ex03",
+            "projectName": "420-ZC6_c1c74069"
+        },
+        {
+            "type": "java",
+            "name": "Tp03Ex02",
+            "request": "launch",
+            "mainClass": "tabbaraib.tp03.Tp03Ex02",
+            "projectName": "420-ZC6_5605b008"
+        },
+        {
+            "type": "java",
+            "name": "At11Ex04",
+            "request": "launch",
+            "mainClass": "tabbaraib.at11.At11Ex04",
+            "projectName": "420-ZC6_5605b008"
+        },
+        {
+            "type": "java",
+            "name": "At11Ex03",
+            "request": "launch",
+            "mainClass": "tabbaraib.at11.At11Ex03",
+            "projectName": "420-ZC6_5605b008"
+        },
+        {
+            "type": "java",
+            "name": "At09Ex06",
+            "request": "launch",
+            "mainClass": "sandbox.At09Ex06",
+            "projectName": "420-ZC6_c1c74069"
+        },
+        {
+            "type": "java",
+            "name": "At09Ex05",
+            "request": "launch",
+            "mainClass": "sandbox.At09Ex05",
+            "projectName": "420-ZC6_c1c74069"
+        },
+        {
+            "type": "java",
+            "name": "At09Ex04",
+            "request": "launch",
+            "mainClass": "sandbox.At09Ex04",
+            "projectName": "420-ZC6_c1c74069"
+        },
+        {
+            "type": "java",
+            "name": "At09Ex03",
+            "request": "launch",
+            "mainClass": "sandbox.At09Ex03",
+            "projectName": "420-ZC6_c1c74069"
+        },
+        {
+            "type": "java",
+            "name": "At09Ex02",
+            "request": "launch",
+            "mainClass": "sandbox.At09Ex02",
+            "projectName": "420-ZC6_c1c74069"
+        },
+        {
+            "type": "java",
+            "name": "At09Ex01",
+            "request": "launch",
+            "mainClass": "sandbox.At09Ex01",
+            "projectName": "420-ZC6_c1c74069"
+        },
+        {
+            "type": "java",
+            "name": "At10Ex09",
+            "request": "launch",
+            "mainClass": "tabbaraib.at10.At10Ex09",
+            "projectName": "420-ZC6_c1c74069"
+        },
+        {
+            "type": "java",
+            "name": "At10Ex08",
+            "request": "launch",
+            "mainClass": "tabbaraib.at10.At10Ex08",
+            "projectName": "420-ZC6_c1c74069"
+        },
+        {
+            "type": "java",
+            "name": "At10Ex07",
+            "request": "launch",
+            "mainClass": "tabbaraib.at10.At10Ex07",
+            "projectName": "420-ZC6_c1c74069"
+        },
+        {
+            "type": "java",
+            "name": "At10Ex06",
+            "request": "launch",
+            "mainClass": "tabbaraib.at10.At10Ex06",
+            "projectName": "420-ZC6_c1c74069"
+        },
+        {
+            "type": "java",
+            "name": "At10Ex05",
+            "request": "launch",
+            "mainClass": "tabbaraib.at10.At10Ex05",
+            "projectName": "420-ZC6_c1c74069"
+        },
+        {
+            "type": "java",
+            "name": "At10Ex04",
+            "request": "launch",
+            "mainClass": "tabbaraib.at10.At10Ex04",
+            "projectName": "420-ZC6_c1c74069"
+        },
+        {
+            "type": "java",
+            "name": "At10Ex03",
+            "request": "launch",
+            "mainClass": "tabbaraib.at10.At10Ex03",
+            "projectName": "420-ZC6_c1c74069"
+        },
+        {
+            "type": "java",
+            "name": "Tp02Ex03",
+            "request": "launch",
+            "mainClass": "tabbaraib.tp02.Tp02Ex03",
+            "projectName": "420-ZC6_c1c74069"
+        },
+        {
+            "type": "java",
+            "name": "Tp01Ex01",
+            "request": "launch",
+            "mainClass": "tabbaraib.tp01.Tp01Ex01",
+            "projectName": "420-ZC6_a34b55ab"
+        },
+        {
+            "type": "java",
+            "name": "Tp01Ex01",
+            "request": "launch",
+            "mainClass": "tabbaraib.tp01.Tp01Ex01",
+            "projectName": "420-ZC6_4673a93b"
+        },
+        {
+            "type": "java",
+            "name": "At04Ex010",
+            "request": "launch",
+            "mainClass": "tabbaraib.at04.At04Ex010",
+            "projectName": "420-ZC6_4673a93b"
+        },
+        {
+            "type": "java",
+            "name": "At04Ex10",
+            "request": "launch",
+            "mainClass": "tabbaraib.at04.At04Ex10",
+            "projectName": "420-ZC6_4673a93b"
+        },
+        {
+            "type": "java",
+            "name": "At04Ex09",
+            "request": "launch",
+            "mainClass": "tabbaraib.at04.At04Ex09",
+            "projectName": "420-ZC6_4673a93b"
+        },
+        {
+            "type": "java",
+            "name": "At04Ex08",
+            "request": "launch",
+            "mainClass": "tabbaraib.at04.At04Ex08",
+            "projectName": "420-ZC6_4673a93b"
+        },
+        {
+            "type": "java",
+            "name": "At04Ex07",
+            "request": "launch",
+            "mainClass": "tabbaraib.at04.At04Ex07",
+            "projectName": "420-ZC6_4673a93b"
+        },
+        {
+            "type": "java",
+            "name": "At04Ex06",
+            "request": "launch",
+            "mainClass": "tabbaraib.at04.At04Ex06",
+            "projectName": "420-ZC6_4673a93b"
+        },
+        {
+            "type": "java",
+            "name": "At04Ex05",
+            "request": "launch",
+            "mainClass": "tabbaraib.at04.At04Ex05",
+            "projectName": "420-ZC6_4673a93b"
+        },
+        {
+            "type": "java",
+            "name": "At04Ex04",
+            "request": "launch",
+            "mainClass": "tabbaraib.at04.At04Ex04",
+            "projectName": "420-ZC6_4673a93b"
+        },
+        {
+            "type": "java",
+            "name": "At04Ex03",
+            "request": "launch",
+            "mainClass": "tabbaraib.at04.At04Ex03",
+            "projectName": "420-ZC6_4673a93b"
+        },
+        {
+            "type": "java",
+            "name": "at03$TexteCentre",
+            "request": "launch",
+            "mainClass": "sandbox.Tabbara.at03$TexteCentre",
+            "projectName": "420-ZC6_4673a93b"
+        },
+        {
+            "type": "java",
+            "name": "at03",
+            "request": "launch",
+            "mainClass": "sandbox.Tabbara.at03",
+            "projectName": "420-ZC6_4673a93b"
+        },
+        {
+            "type": "java",
+            "name": "Paysage",
+            "request": "launch",
+            "mainClass": "sandbox.Paysage",
+            "projectName": "420-ZC6_4673a93b"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "ConsoleTest",
+            "request": "launch",
+            "mainClass": "sandbox.ConsoleTest",
+            "projectName": "420-ZC6_4673a93b"
+        },
+        {
+            "type": "java",
+            "name": "DemoColor",
+            "request": "launch",
+            "mainClass": "sandbox.DemoColor",
+            "projectName": "420-ZC6_4673a93b"
+        },
+        {
+            "type": "java",
+            "name": "EnvironnementTest",
+            "request": "launch",
+            "mainClass": "sandbox.EnvironnementTest",
+            "projectName": "420-ZC6_4673a93b"
+        },
+        {
+            "type": "java",
+            "name": "Facture",
+            "request": "launch",
+            "mainClass": "sandbox.Facture",
+            "projectName": "420-ZC6_4673a93b"
+        },
+        {
+            "type": "java",
+            "name": "FenetreDessinTest",
+            "request": "launch",
+            "mainClass": "sandbox.FenetreDessinTest",
+            "projectName": "420-ZC6_4673a93b"
+        },
+        {
+            "type": "java",
+            "name": "PseudoSyntaxe",
+            "request": "launch",
+            "mainClass": "sandbox.PseudoSyntaxe",
+            "projectName": "420-ZC6_4673a93b"
+        },
+        {
+            "type": "java",
+            "name": "Somme",
+            "request": "launch",
+            "mainClass": "sandbox.Somme",
+            "projectName": "420-ZC6_4673a93b"
+        },
+        {
+            "type": "java",
+            "name": "Bienvenue",
+            "request": "launch",
+            "mainClass": "tabbaraib.test.Bienvenue",
+            "projectName": "420-ZC6_4673a93b"
+        }
+    ]
+}

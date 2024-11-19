@@ -1,0 +1,24 @@
+Ligne,min,max,somme,i,Console
+9,,,,,"Indiquez la valeur minimum : "
+10,11,,,,
+11,,,,,"Indiquez la valeur maximum : "
+12,,19,,,
+13,,,0,,
+14,,,,,
+15,12,,,,
+16,,,,,
+17,,,,12,
+18,,,12,,
+19,,,,,La racine carrée de 12 = 3.4641016151377544
+17,,,,14,
+18,,,26,,
+19,,,,,La racine carrée de 14 = 3.7416573867739413
+17,,,,16,
+18,,,42,,
+19,,,,,La racine carrée de 16 = 4.0
+17,,,,18,
+18,,,60,,
+17,,,,20,
+19,,,,,La racine carrée de 18 = 4.242640687119285
+20,,,,,
+21,,,,,Somme des nombres pairs = 60

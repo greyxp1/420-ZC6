@@ -1,0 +1,7 @@
+ligne,caseCoord,couleur,caseNum,caseAlpha,console
+10,,,,,"Entrez la coordonnée de la case : "
+11,D4,,,,
+12,,,,d,
+13,,,4,,
+24,,blanche,,,
+27,,,,,La case d4 est blanche

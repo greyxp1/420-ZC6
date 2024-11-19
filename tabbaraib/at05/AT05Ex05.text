@@ -1,0 +1,9 @@
+Procédure ligneEtoiles()
+AFFICHER:("*" répété 25 fois)
+FIN
+
+Programme Principal
+APPELER ligneEtoiles()
+APPELER ligneEtoiles()
+APPELER ligneEtoiles()
+FIN

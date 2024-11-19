@@ -1,0 +1,85 @@
+<mxfile host="65bd71144e">
+    <diagram id="SsV2E5Sw_Dc-AI6xw_YH" name="Page-1">
+        <mxGraphModel dx="1386" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="73" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="71" target="72">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="Debut" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="365" y="10" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="72" target="74">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="Variables:&amp;nbsp;&lt;br&gt;nb1Etoile, nb2Etoile, nb3Etoile, nb4Etoile TYPE NUMERIQUE&lt;br&gt;nbTotalVote, nbTotalEtoile, nbEtoileMoyen TYPE NUMERIQUE" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="248" y="80" width="355" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="74" target="76">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="74" value="AFFICHER: &quot;Indiquer le nombre de votes pour 1, 2, 3 et 4 étoiles : &quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="220.5" y="160" width="410" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="81" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="76" target="80">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="LIRE(nb1Etoile)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="365.5" y="219" width="120" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="78" target="84">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="LIRE(nb4Etoile)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="364.5" y="370" width="120" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="79" target="78">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="LIRE(nb3Etoile)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="364.5" y="320" width="120" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="80" target="79">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="LIRE(nb2Etoile)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="364.5" y="270" width="120" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="84" target="86">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="nbTotalVote ← nb1Etoile + nb2Etoile + nb3Etoile + nb4Etoile" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="237.75" y="420" width="375.5" height="38" as="geometry"/>
+                </mxCell>
+                <mxCell id="89" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="86" target="88">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="nbTotalEtoile ←nb1Etoile*1 + nb2Etoile*2 + nb3Etoile*3 + nb4Etoile*4" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="217.25" y="480" width="413.25" height="38" as="geometry"/>
+                </mxCell>
+                <mxCell id="91" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="88" target="90">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="88" value="nbEtoileMoyen ←nbTotalEtoile / nbTotalVote" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="285.5" y="540" width="280" height="38" as="geometry"/>
+                </mxCell>
+                <mxCell id="93" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="90" target="92">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="90" value="AFFICHER(&quot;Note moyenne : &quot;, nbEtoileMoyen)&lt;br/&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="279.38" y="600" width="286.12" height="38" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="92" target="94">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" value="AFFICHER(&quot;Nombre total de votes : &quot;, nbTotalVote)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="260" y="660" width="318.56" height="38" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" value="Fin" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="359.28" y="720" width="120" height="50" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

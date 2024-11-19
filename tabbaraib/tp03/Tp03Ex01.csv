@@ -1,0 +1,29 @@
+Lines,nbUsager,nbADeviner,numEssai,Console
+13,,,0,
+14,,9,,
+15,,,,Vous devez deviner le nombre secret entre 1 et 15.
+16,,,,Le nombre de tentatives est limité à 3.
+17,,,,
+18,,,1,
+19,,,,"Tentative #1 : "
+20,7,,,
+21,,,,
+22,,,,Plus grand
+18,,,2,
+19,,,,"Tentative #2 : "
+20,11,,,
+21,,,,
+22,,,,
+23,,,,
+24,,,,Plus petit
+18,,,3,
+19,,,,"Tentative #3 : "
+20,9,,,
+21,,,,
+22,,,,
+23,,,,
+24,,,,
+25,,,,
+26,,,,
+27,,,,
+28,,,,SUPER! Vous avez réussi!

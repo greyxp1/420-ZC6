@@ -1,0 +1,22 @@
+ALGORITHME calcul_triangle
+CONSTANTES: distance(x1, y1, x2, y2), racine carrée((x2 - x1)^2 + (y2 - y1)^2)
+VARIABLES: x1, y1, x2, y2, x3, y3, a, b, c, p, aire TYPE NUMÉRIQUE
+DÉBUT 
+AFFICHER:("Entrez les coordonnées du premier point (A): ") LIRE (x1, y1)
+AFFICHER:("Entrez les coordonnées du deuxième point (B): ")
+LIRE(x2, y2)
+AFFICHER: ("Entrez les coordonnées du troisième point (C): ")
+LIRE(x3, y3)
+AFFICHER ("-------------------------")
+a = distance(x1, y1, x2, y2)
+b = distance(x2, y2, x3, y3)
+c = distance(x3, y3, x1, y1)
+AFFICHER:("Mesure du segment AB : ", a)
+AFFICHER:("Mesure du segment BC : ", b)
+AFFICHER:("Mesure du segment AC : ", c)
+p = a + b + c
+AFFICHER:("Périmètre du triangle ABC : ", p)
+s = p / 2
+aire = racine carrée(s * (s - a) * (s - b) * (s - c))
+AFFICHER:("Aire du triangle ABC : ", aire)
+FIN

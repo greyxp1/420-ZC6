@@ -1,0 +1,17 @@
+"""#"""	debut	fin	delai	console		
+"10"				Indiquer l'heure de début (HHMM) :		
+"11"	0855					
+"12"				Indiquer l'heure de fin (HHMM) :		
+"13"		1425				
+"14"			530			
+"15"				Le délai est de 0530		
+						
+						
+"""#"""	heure1	heure2	heureDiff	minute	minHeure1	minHeure2
+"I"	0855	1425				
+"29"					480	
+"30"					535	
+"31"						840
+"32"						865
+"33"				330		
+"34"			530			
