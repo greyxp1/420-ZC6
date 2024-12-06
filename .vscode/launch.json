@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Tp04",
+            "request": "launch",
+            "mainClass": "tabbaraib.tp04.Tp04",
+            "projectName": "420-ZC6_5d7b1bf"
+        },
+        {
+            "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "tabbaraib.tp04.test",
+            "projectName": "420-ZC6_5d7b1bf"
+        },
+        {
+            "type": "java",
             "name": "At12Ex06",
             "request": "launch",
             "mainClass": "tabbaraib.at12.At12Ex06",

@@ -123,32 +123,39 @@ public class Tp04 {
 		int maxScore = 0;
 		int[] points = {0, 1, 3, 5, 7, 9, 11, 15, 20, 25, 30, 35, 40, 50, 60, 70, 85, 100, 150, 300};
 		int[] tuiles = new int[40];
-		System.out.print("Sélectionnez le pointage de Base ou Expert ou Quitter : ");
-		typePointage = cl.next().toUpperCase().charAt(0);
-		System.out.print("Distribution des chiffres, soit Classique ou Différents? ");
-		typeDistribution = cl.next().toUpperCase().charAt(0);
 
-		while (typePointage != 'Q') {
-			if (typePointage == 'E') {
-				points[9] = 3;
-				points[35] = 20;
-				points[85] = 50;
+		do {
+			System.out.print("Sélectionnez le pointage de Base ou Expert ou Quitter : ");
+			typePointage = cl.next().toUpperCase().charAt(0);
+			if (typePointage != 'Q') {
+				System.out.print("Distribution des chiffres, soit Classique ou Différents? ");
+				typeDistribution = cl.next().toUpperCase().charAt(0);			
+				
+				if (typePointage == 'E') {
+					points[5] = 3;
+					points[11] = 20;
+					points[16] = 50;
+				}
+				if (typeDistribution == 'C') {
+					tuiles = new int[40];
+					for (int i = 0; i < 40; i++) {
+						if (i <= 30) {
+							tuiles[i] = i;
+						} else {
+							tuiles[i] = i - 20;
+						}
+					}
+				} else {
+					tuiles = new int[40];
+					for (int i = 1; i < 40; i++) {
+						tuiles[i] = i + 1;
+					}
+				}
+				if (jouerPartie(cl, tuiles, points) > maxScore) {
+					maxScore = jouerPartie(cl, tuiles, points);
+				}
 			}
-			if (typeDistribution == 'C') {
-				tuiles = new int [] {0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
-					10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
-					20, 21, 22, 23, 24, 25, 26, 27, 28, 29,
-					30, 11, 12, 13, 14, 15, 16, 17, 18, 19};
-			} else {
-				tuiles = new int [] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
-					11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 
-					21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
-					31, 32, 33, 34, 35, 36, 37, 38, 39, 40};
-			}
-			if (jouerPartie(cl, tuiles, points) > maxScore) {
-				maxScore = jouerPartie(cl, tuiles, points);
-			}
-		}
+		} while (typePointage != 'Q');
 
 		System.out.println("Votre record est : " + maxScore);
 		System.out.println("Bonne journée");
@@ -169,10 +176,13 @@ public class Tp04 {
 		int[] scores;
 		cases = toursDeJeu(cl, tuiles);
 		changeJoker(cl, cases);
+		affiche(cases, '-', '-', -1, "__");
 		scores = calculScore(cases, points);
 		int totalScore = somme(scores);
 		int maxScore = maximum(scores);
-		System.out.print("Total de la partie = ");
+
+		System.out.print("Total de la partie = " + totalScore);
+		cl.nextInt();
 		return totalScore;
 	}
 
@@ -195,13 +205,39 @@ public class Tp04 {
 		for (int i = 0; i < positions.length; i++) {
 			positions[i] = i + 1;
 		}
-		return null; // Retourne le tableau de cases rempli
+		boolean[] tuilesDisponibles = new boolean[tuiles.length];
+		for (int i = 0; i < tuilesDisponibles.length; i++) {
+			tuilesDisponibles[i] = true;
+		}
+
+		for (int i = 0; i < NB_CASES; i++) {
+			int tuile = pigeTuile(tuiles, tuilesDisponibles);			
+			int position;
+			affiche(cases, '-', '-', -1, "__");
+			affiche(positions, ' ', ' ', -1, " ");		
+			System.out.println();
+			System.out.print("Position d'ajout du nombre " + tuile + " > ");
+			position = cl.nextInt();
+			while (position < 1 || position > NB_CASES || cases[position - 1] != -1) {
+				System.out.print("Cette position est invalide, choisissez-en une autre > ");
+				position = cl.nextInt();
+			}		
+			cases[position - 1] = tuile;
+		}
+		return cases;
 	}
 
 	// A FAIRE (8) : code - documentation(/**)
 	public static void changeJoker(Scanner cl, int[] cases) {
 		// Le tableau cases peut être modifié si un JOKER est présent
 		// Lire la documentation de l'énoncé et utiliser la fonction trouve()
+		int position = trouve(cases, 0);
+		
+		if (position != -1) {
+			affiche(cases, '-', '-', 0, "**");
+			System.out.print("En quelle valeur voulez-vous changer le JOKER? ");
+			cases[position] = cl.nextInt();
+		}
 	}
 
 	// A FAIRE (13) : code - documentation(/**)
@@ -210,10 +246,30 @@ public class Tp04 {
 		// Aucun affichage n'est réalisé par cette fonction
 		// Initialiser à zéro un tableau de scores de la même taille que le tableau cases
 		// Initialiser la longueur de la suite à 1
-		// Pour chaque paire de cases adjacentes, vérifier s'il s'agit de la fin 
-		// d'une suite et faire le traitement approprié
-		// Ne pas oublier d'écrire les points de la dernière suite
-		return null; // Retourne le tableau des scores créé
+        // Pour chaque paire de cases adjacentes, vérifier s'il s'agit de la fin 
+        // d'une suite et faire le traitement approprié
+        // Ne pas oublier d'écrire les points de la dernière suite
+		
+		int[] score = new int[cases.length];
+		for (int i = 0; i < cases.length; i++) {
+			score[i] = 0;
+		}
+		int longueurDeSuite = 1;
+		for (int i = 0; i < cases.length - 1; i++) {
+			if (cases[i] + 1 == cases[i + 1]) {
+				longueurDeSuite++;
+			} else {
+				if (longueurDeSuite > 1) {
+					score[i] = points[longueurDeSuite - 1];
+				}
+				longueurDeSuite = 1;
+			}
+		}
+		if (longueurDeSuite > 1) {
+			score[cases.length - 1] = points[longueurDeSuite - 1];
+		}
+
+		return score;
 	}
 
 	// A FAIRE (8) : code - documentation(/**)
@@ -232,6 +288,23 @@ public class Tp04 {
 		// Lire la documentation de l'énoncé et utiliser String.formatted()
 		// Indice : Faire un cas spécial pour le premier élément qui ne
 		// doit pas être précédé d'un séparateur 
+
+		for (int i = 0; i < tab.length; i++) {
+			if (tab[i] == val) {
+				System.out.print(rem);
+			} else {
+				System.out.print(String.format("%2d", tab[i]));
+			}
+
+			if (i < tab.length - 1) {
+				if (tab[i] <= tab[i + 1]) {
+					System.out.print(" " + sepC + " ");
+				} else {
+					System.out.print(" " + sepD + " ");
+				}
+			}
+		}
+		System.out.println();
 	}
 
 	// A FAIRE (6) : code - documentation(/**)
