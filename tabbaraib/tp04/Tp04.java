@@ -101,21 +101,8 @@ public class Tp04 {
 	@Test void test55() { assertEquals(-1, trouve(new int[] {}, 7)); }
 
 
-	public static final int NB_CASES = 7; // Nombre de cases à remplir par partie, maximum 20
+	public static final int NB_CASES = 7;
 	public static void main(String[] args) {
-		// A FAIRE (45) : code
-		// Déclarer un tableau pour les points et l'initialiser avec les points
-		// de base inscrits sur la feuille de pointage disponible dans l'énoncé
-		// Créer un tableau de taille quarante pour stocker les tuiles
-		// Répéter
-		// Si l'usager ne choisit pas de quitter
-		// On modifie les trois cases du tableau des points selon le type de pointage choisi
-		// On initialise le tableau des tuiles selon la distribution désirée
-		// Appel de jouerPartie() et récupération du score final
-		// Mise à jour du score maximal si le joueur a fait un nouveau record
-		// Tant que le joueur ne choisit pas de quitter
-		// Afficher le pointage record et saluer le joueur
-
 		Outils.Aleatoire.setSeed(9531);
 		Scanner cl = new Scanner(System.in);
 		char typePointage;
@@ -136,7 +123,13 @@ public class Tp04 {
 					points[11] = 20;
 					points[16] = 50;
 				}
-				if (typeDistribution == 'C') {
+
+				if (typeDistribution == 'D') {
+					tuiles = new int[40];
+					for (int i = 1; i < 40; i++) {
+						tuiles[i] = i + 1;
+					}
+				} else {
 					tuiles = new int[40];
 					for (int i = 0; i < 40; i++) {
 						if (i <= 30) {
@@ -145,13 +138,9 @@ public class Tp04 {
 							tuiles[i] = i - 20;
 						}
 					}
-				} else {
-					tuiles = new int[40];
-					for (int i = 1; i < 40; i++) {
-						tuiles[i] = i + 1;
-					}
 				}
 				int currentScore = jouerPartie(cl, tuiles, points);
+
 				if (currentScore > maxScore) {
     				maxScore = currentScore;
 				}
@@ -162,41 +151,21 @@ public class Tp04 {
 		System.out.println("Bonne journée");
 	}
 
-	// A FAIRE (14) : code - documentation(/**)
+	//documentation(/**)
 	public static int jouerPartie(Scanner cl, int[] tuiles, int[] points) {
-		// tuiles et points ne doivent pas être modifiés
-		// Déclarer un tableau de cases et de scores, mais ne pas les initialiser
-		// Appeler toursDeJeu() et récupérer le tableau de cases
-		// Appeler changeJoker()
-		// Appeler calculScore() et récupérer le tableau des scores
-		// Appeler somme() pour obtenir le score total
-		// Appeler maximum() pour obtenir la poisition du score maximal pour une suite
-		// Afficher le résultat de la partie
-
-		//Gère une partie complète de Boutabou. On commence par appeler toursDeJeu() pour permettre au joueur
-		//de remplir les cases du jeu à l’aide des tuiles tirées au hasard. Le tableau ainsi obtenu est passé à la méthode
-		//changeJoker() afin de remplacer le Joker par une valeur choisie par le joueur. L’appel de calculScore()
-		//renvoie un tableau contenant le pointage pour chaque suite trouvée. On peut alors extraire le nombre total de points et le
-		//nombre maximum de points obtenus pour une suite avant d’afficher le résultat final de la partie. Un exemple d’affichage
-		//est disponible dans le terminal Boutabou aux lignes 29 à 31. Le nombre total de points est retourné par cette fonction
-
 		int[] cases = toursDeJeu(cl, tuiles);
+
 		changeJoker(cl, cases);
 		affiche(cases, '-', '/', -1, "__");
 		int[] scores = calculScore(cases, points);
-		
+		affiche(scores, ' ', ' ', 0, "  ");
+
 		int nbMax = maximum(scores);
 		int scoreMax = scores[nbMax];
 		int totalScore = somme(scores);
 
-		for (int i = 0; i < cases.length; i++) {
-			if (scores[i] > 0) {
-				System.out.print(scores[i]);
-			}
-		}
-		
-		System.out.println();
 		System.out.println("Total de la partie = " + totalScore + " (" + scoreMax + ")");
+
 		if (totalScore > scoreMax) {
 			System.out.println("Bravo, vous avez battu votre record! Nouveau score à battre : " + String.format("%03d", totalScore));
 		}
@@ -204,26 +173,22 @@ public class Tp04 {
 		return totalScore;
 	}
 
-	// A FAIRE (26) : code - documentation(/**)
+	//documentation(/**)
 	public static int[] toursDeJeu(Scanner cl, int[] tuiles) {
-		// tuiles ne doit pas être modifié
-		// Initialiser un tableau de cases à -1 ayant pour taille NB_CASES
-		// Initialiser un tableau de positions avec les nombres de 1 à NB_CASES
-		// Initialiser un tableau tuiles disponibles à vrai (true) de la même taille que tuiles
-		// Pour le nombre de cases à remplir, piger une tuile, afficher l'état actuel
-		// des cases, demander la position d'ajout au joueur, jusqu'à ce qu'il
-		// entre une position valide, et écrire la tuile dans la case.
-		// Indice : Les positions du joueur débutent à 1 alors que votre tableau débute à 0
-
 		int[] cases = new int[NB_CASES];
+
 		for (int i = 0; i < cases.length; i++) {
 			cases[i] = -1;
 		}
+
 		int[] positions = new int[NB_CASES];
+
 		for (int i = 0; i < positions.length; i++) {
 			positions[i] = i + 1;
 		}
+
 		boolean[] tuilesDisponibles = new boolean[tuiles.length];
+
 		for (int i = 0; i < tuilesDisponibles.length; i++) {
 			tuilesDisponibles[i] = true;
 		}
@@ -241,22 +206,12 @@ public class Tp04 {
 			}		
 			cases[position - 1] = tuile;
 		}
+		
 		return cases;
 	}
 
-	// A FAIRE (8) : code - documentation(/**)
+	//documentation(/**)
 	public static void changeJoker(Scanner cl, int[] cases) {
-		// Le tableau cases peut être modifié si un JOKER est présent
-		// Lire la documentation de l'énoncé et utiliser la fonction trouve()
-
-
-		//Remplace le Joker, s’il est présent dans le tableau cases, reçu en paramètre, par la valeur choisie par le joueur. Cette
-		//méthode commence par rechercher le Joker, soit la valeur 0, dans le tableau cases, à l’aide de la fonction trouve().
-		//S’il est présent, on affiche le tableau en substituant le Joker par ** avant de demander la valeur de remplacement.
-		//Aucune validation n’est faite sur la valeur lue, elle doit simplement être écrite dans le tableau à la position du Joker.
-		//Dans le cas où le Joker est absent, la méthode retourne immédiatement, sans modifier le tableau.
-		
-
 		int position = trouve(cases, 0);
 
 		if (position != -1){
@@ -264,21 +219,11 @@ public class Tp04 {
 			System.out.print("En quelle valeur voulez-vous changer le JOKER? ");
 			cases[position] = cl.nextInt();
 		}	
-			
 	}
 
-	// A FAIRE (13) : code - documentation(/**)
+	//documentation(/**)
 	public static int[] calculScore(int[] cases, int[] points) {
-		// cases et points ne doivent pas être modifiés
-		// Aucun affichage n'est réalisé par cette fonction
-		// Initialiser à zéro un tableau de scores de la même taille que le tableau cases
-		// Initialiser la longueur de la suite à 1
-        // Pour chaque paire de cases adjacentes, vérifier s'il s'agit de la fin 
-        // d'une suite et faire le traitement approprié
-        // Ne pas oublier d'écrire les points de la dernière suite
-		
 		int[] scores = new int[cases.length];
-		int startPos = 0;
 		int longueurSuite = 1;
 		
 		for (int i = 0; i < cases.length - 1; i++) {
@@ -286,44 +231,31 @@ public class Tp04 {
 				longueurSuite++;
 			} else {
 				if (longueurSuite > 1) {
-					scores[startPos] = points[longueurSuite - 1];
+					scores[i] = points[longueurSuite - 1]; 
 				}
-				startPos = i + 1;
 				longueurSuite = 1;
 			}
 		}
-    
+
 		if (longueurSuite > 1) {
-			scores[startPos] = points[longueurSuite - 1];
+			scores[cases.length - 1] = points[longueurSuite - 1];
 		}
-    
-		
 		return scores;
 	}
 
-	// A FAIRE (8) : code - documentation(/**)
+	//documentation(/**)
 	public static int pigeTuile(int[] tuiles, boolean[] disponible) {
-		// Seul tuiles ne doit pas être modifié
-		// Aucun affichage n'est réalisé par cette fonction
-		// Lire la documentation de l'énoncé et utiliser Outils.Aleatoire
-		// Indice : Ne pas oublier de mettre la tuile pigée à
-		// false dans le tableau disponible
 		int tuilePigee;
+
 		do {
 			tuilePigee = Outils.Aleatoire.nextInt(0, tuiles.length);
 		} while (disponible[tuilePigee] == false);
 		disponible[tuilePigee] = false;
-
 		return tuiles[tuilePigee];
 	}
 
-	// A FAIRE (15) : code - documentation(/**)
+	//documentation(/**)
 	public static void affiche(int[] tab, char sepC, char sepD, int val, String rem) {
-		// tab ne doit pas être modifié
-		// Lire la documentation de l'énoncé et utiliser String.formatted()
-		// Indice : Faire un cas spécial pour le premier élément qui ne
-		// doit pas être précédé d'un séparateur 
-
 		for (int i = 0; i < tab.length; i++) {
 			if (tab[i] == val) {
 				System.out.print(rem);
@@ -342,24 +274,20 @@ public class Tp04 {
 		System.out.println();
 	}
 
-	// A FAIRE (6) : code - documentation(/**)
+	//documentation(/**)
 	public static int somme(int[] vecteur) {
-		// vecteur ne doit pas être modifié
-		// Aucun affichage n'est réalisé par cette fonction
-		// Indice : Notes de cours
 		int total = 0;
+
 		for (int i = 0; i < vecteur.length; i++) {
 			total += vecteur[i];
 		}
 		return total;
 	}
 
-	// A FAIRE (8) : code - documentation(/**)
+	//documentation(/**)
 	public static int maximum(int[] vecteur) {
-		// vecteur ne doit pas être modifié
-		// Aucun affichage n'est réalisé par cette fonction
-		// Indice : Notes de cours
 		int max = 0;
+
 		for (int i = 1; i < vecteur.length; i++) {
 			if (vecteur[i] > vecteur[max]) {
 				max = i;
@@ -368,12 +296,10 @@ public class Tp04 {
 		return max;
 	}
 
-	// A FAIRE (9) : code - documentation(/**)
+	//documentation(/**)
 	public static int trouve(int[] vecteur, int valeur) {
-		// vecteur ne doit pas être modifié
-		// Aucun affichage n'est réalisé par cette fonction
-		// Indice : Notes de cours
 		int position = -1;
+
 		for (int i = 0; i < vecteur.length; i++) {
 			if (vecteur[i] == valeur) {
 				position = i;
