@@ -9,6 +9,20 @@
             "name": "Tp04",
             "request": "launch",
             "mainClass": "tabbaraib.tp04.Tp04",
+            "projectName": "420-ZC6_c3c4b56"
+        },
+        {
+            "type": "java",
+            "name": "Tp04EverythingWorkingSaufDoWhileDebut",
+            "request": "launch",
+            "mainClass": "tabbaraib.tp04.Tp04EverythingWorkingSaufDoWhileDebut",
+            "projectName": "420-ZC6_c3c4b56"
+        },
+        {
+            "type": "java",
+            "name": "Tp04",
+            "request": "launch",
+            "mainClass": "tabbaraib.tp04.Tp04",
             "projectName": "420-ZC6_5d7b1bf"
         },
         {
