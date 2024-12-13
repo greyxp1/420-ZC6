@@ -151,7 +151,13 @@ public class Tp04 {
 		System.out.println("Bonne journée");
 	}
 
-	//documentation(/**)
+	/**
+	 * Gère une partie complète de Boutabou.
+	 * @param cl Scanner les entrées de l'utilisateur.
+	 * @param tuiles Tableau des tuiles disponibles.
+	 * @param points Tableau des points associés aux scores.
+	 * @return Retour le score total de la partie.
+	 */
 	public static int jouerPartie(Scanner cl, int[] tuiles, int[] points) {
 		int[] cases = toursDeJeu(cl, tuiles);
 
@@ -173,7 +179,13 @@ public class Tp04 {
 		return totalScore;
 	}
 
-	//documentation(/**)
+	/**
+	 * Gère les tours de jeu en demandant à l'utilisateur d'ajouter des nombres.
+	 * 
+	 * @param cl Scanner pour lire les entrées de l'utilisateur.
+	 * @param tuiles Tableau des tuiles disponibles.
+	 * @return Retour un tableau des cases remplies par l'utilisateur.
+	 */
 	public static int[] toursDeJeu(Scanner cl, int[] tuiles) {
 		int[] cases = new int[NB_CASES];
 
@@ -210,7 +222,12 @@ public class Tp04 {
 		return cases;
 	}
 
-	//documentation(/**)
+	/**
+	 * Change la valeur d'un joker dans les cases.
+	 * 
+	 * @param cl Scanner pour lire les entrées de l'utilisateur.
+	 * @param cases Tableau des cases du jeu.
+	 */
 	public static void changeJoker(Scanner cl, int[] cases) {
 		int position = trouve(cases, 0);
 
@@ -221,7 +238,13 @@ public class Tp04 {
 		}	
 	}
 
-	//documentation(/**)
+	/**
+	 * Calcule les scores basés sur les cases et les points.
+	 * 
+	 * @param cases Tableau des cases du jeu.
+	 * @param points Tableau des points associés aux scores.
+	 * @return Retour un tableau des scores calculés.
+	 */
 	public static int[] calculScore(int[] cases, int[] points) {
 		int[] scores = new int[cases.length];
 		int longueurSuite = 1;
@@ -243,7 +266,13 @@ public class Tp04 {
 		return scores;
 	}
 
-	//documentation(/**)
+	/**
+	 * Tire une tuile au hasard parmi celles disponibles.
+	 * 
+	 * @param tuiles Tableau des tuiles.
+	 * @param disponible Tableau indiquant si une tuile est disponible.
+	 * @return Retour la tuile tirée.
+	 */
 	public static int pigeTuile(int[] tuiles, boolean[] disponible) {
 		int tuilePigee;
 
@@ -254,7 +283,15 @@ public class Tp04 {
 		return tuiles[tuilePigee];
 	}
 
-	//documentation(/**)
+	/**
+	 * Affiche un tableau avec des séparateurs.
+	 * 
+	 * @param tab Tableau à afficher.
+	 * @param sepC Séparateur pour les valeurs croissantes.
+	 * @param sepD Séparateur pour les valeurs décroissantes.
+	 * @param val Valeur à remplacer par un symbole.
+	 * @param rem Symbole de remplacement.
+	 */
 	public static void affiche(int[] tab, char sepC, char sepD, int val, String rem) {
 		for (int i = 0; i < tab.length; i++) {
 			if (tab[i] == val) {
@@ -274,7 +311,12 @@ public class Tp04 {
 		System.out.println();
 	}
 
-	//documentation(/**)
+	/**
+	 * Calcule la somme des éléments d'un tableau.
+	 * 
+	 * @param vecteur Tableau dont on veut la somme.
+	 * @return Retour la somme des éléments du tableau.
+	 */
 	public static int somme(int[] vecteur) {
 		int total = 0;
 
@@ -284,7 +326,12 @@ public class Tp04 {
 		return total;
 	}
 
-	//documentation(/**)
+	/**
+	 * Trouve l'indice du maximum dans un tableau.
+	 * 
+	 * @param vecteur Tableau à analyser.
+	 * @return Retour l'indice de la valeur maximale.
+	 */
 	public static int maximum(int[] vecteur) {
 		int max = 0;
 
@@ -296,7 +343,13 @@ public class Tp04 {
 		return max;
 	}
 
-	//documentation(/**)
+	/**
+	 * Trouve la position d'une valeur dans un tableau.
+	 * 
+	 * @param vecteur Tableau à analyser.
+	 * @param valeur Valeur à rechercher.
+	 * @return Retour l'indice de la valeur trouvée, ou -1 si non trouvée.
+	 */
 	public static int trouve(int[] vecteur, int valeur) {
 		int position = -1;
 

@@ -19,5 +19,6 @@
         "PowerShell": {"source": "PowerShell","icon": "terminal-powershell","args": ["-NoExit", "/c", "chcp 1252"]},
         "Command Prompt": {"path": ["${env:windir}\\Sysnative\\cmd.exe","${env:windir}\\System32\\cmd.exe"], "args": ["/K", "chcp 1252"], "icon": "terminal-cmd" },
     },
-    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m -Xlog:disable"
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m -Xlog:disable",
+    "java.debug.settings.onBuildFailureProceed": true
 }
